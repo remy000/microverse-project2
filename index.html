@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>webpage</title>
-</head>
-<body>
-    <header id="header">
-        <img src="#" id="header-img">
-        <nav id="nav-bar">
-           <a href="#features">Home</a>
-           <a href="#video">about</a>
-           <a href="#form">contact us</a>
-        </nav>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"/>
+      <nav id="nav-bar">
+        <a href="#form" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
     </header>
-    <main>
-        <section id="features">
-                <h2>Features</h2>
-                <div class="feature">
-                  <h3>Feature 1</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod justo quis justo fringilla, sed pulvinar nisi vestibulum. Nam ut libero et quam.</p>
-                </div>
-        </section>
-        <section id="video">
-            <h2>Product Demo</h2>
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/watch?v=u3ybWiEUaUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section id="form">
-            <h2>Sign Up For Our Newsletter</h2>
-            <form action="https://www.freecodecamp.com/email-submit" method="post">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-              <input type="submit" id="submit" value="Sign Up">
-            </form>
-        </section>
-    </main>
-</body>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <button type="submit" id="submit">Get started</button>
+    </form>
+    <div id="container">
+      <div class="features">
+        <div class="features-icon">&spades;</div>
+        <div>
+          <h2 class="features-title">Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="features-icon">&hearts;</div>
+        <div>
+          <h2 class="features-title">Fast Shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="features-icon">&map;</div>
+        <div>
+          <h2 class="features-title">Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </div>
+      <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div id="pricing">
+          <div class="pricing-item">
+            <h3 class="pricing-title">TENOR TROMBONE</h3>
+            <h2>$600</h2>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <a class="pricing-link" href="#">SELECT</a>
+          </div>
+          <div class="pricing-item">
+            <h3 class="pricing-title">BASS TROMBONE</h3>
+            <h2>$900</h2>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <a class="pricing-link" href="#">SELECT</a>
+          </div>
+          <div class="pricing-item">
+            <h3 class="pricing-title">VALVE TROMBONE</h3>
+            <h2>$1200</h2>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum.</p>
+            <a class="pricing-link" href="#">SELECT</a>
+          </div>
+      </div>
+      <footer id="footer">
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">Contact</a>
+        <br/>
+        <div>Copyright 2016, Original Trombones</div>
+      </footer>
+    </div>
+    <script  src="js/index.js"></script>
+  </body>
 </html>
